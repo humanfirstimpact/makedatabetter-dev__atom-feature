@@ -25,6 +25,7 @@ Custom property | Description | Default
        :host {
         display: block;
         text-align: center;
+        position: relative;
       }
 
        :host iron-icon {
@@ -42,6 +43,11 @@ Custom property | Description | Default
        :host paper-button {
         color: #fff;
         background-color: #00b7f5;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%);
+        white-space: nowrap;
         @apply(--atom-feature-button);
       }
     </style>
