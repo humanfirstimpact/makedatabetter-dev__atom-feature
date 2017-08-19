@@ -1,0 +1,24 @@
+{
+  "name": "atom-feature",
+  "main": "atom-feature.html",
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.4.0"
+  },
+  "devDependencies": {
+    "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",
+    "iron-demo-helpers": "PolymerElements/iron-demo-helpers#^1.0.0",
+    "web-component-tester": "^4.0.0",
+    "webcomponentsjs": "webcomponents/webcomponentsjs#^0.7.0"
+  },
+  "homepage": "https://github.com/makedatabetter-dev/atom-feature",
+  "_release": "81ce9c6edc",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "81ce9c6edc5735bef4b09958266afe48ec300406"
+  },
+  "_source": "https://github.com/makedatabetter-dev/atom-feature.git",
+  "_target": "master",
+  "_originalSource": "makedatabetter-dev/atom-feature",
+  "_direct": true
+}
