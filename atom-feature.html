@@ -23,40 +23,42 @@ Custom property | Description | Default
 <dom-module id="atom-feature">
   <template>
     <style>
-       :host {
+      :host {
         display: block;
         text-align: center;
         position: relative;
         @apply(--paper-font-common-base);
       }
 
-       :host iron-icon {
+      :host iron-icon {
         @apply(--atom-feature-icon);
       }
 
-       :host h3 {
+      :host h3 {
         @apply(--atom-feature-title);
       }
 
-       :host p {
+      :host p {
         @apply(--atom-feature-description);
       }
 
-       :host paper-button {
+      :host paper-button {
         color: #fff;
         background-color: #00b7f5;
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        transform: translate(-50%);
         white-space: nowrap;
         @apply(--atom-feature-button);
+      }
+
+      .atom-button-container {
+        justify-content: center;
       }
     </style>
     <iron-icon icon="{{icon}}"></iron-icon>
     <h3>{{title}}</h3>
     <p>{{description}}</p>
-    <paper-button on-tap="_handleClick">{{buttonTitle}}</paper-button>
+    <div class="atom-button-container">
+      <paper-button on-tap="_handleClick">{{buttonTitle}}</paper-button>
+    </div>
   </template>
 
   <script>
